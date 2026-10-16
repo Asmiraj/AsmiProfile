@@ -405,6 +405,29 @@ function FeaturedWork() {
         </p>
       </div>
 
+        <FeatureSection
+        id="roblox-game"
+        tone="mint"
+        badge="🚧 Under development"
+        badgeClass="badge-build"
+        title="Your little virtual arena, just for fun."
+        text="Arena Showdown is a laid-back virtual arena made purely for fun. Wander around, jump on the trampoline, and enjoy yourself. No pressure, no rules, just good vibes."
+        tags={["Roblox Studio", "Game Design", "Virtual Worlds"]}
+        note={
+          <>
+            Still under development, so think of it as a walk around the
+            workshop. Got feedback? Please <EmailLink>email me</EmailLink>, I'd
+            love to hear it!
+          </>
+        }
+        image="/roblox_2.png"
+        alt="Preview of my Arena Showdown Roblox game"
+        caption="Come hang out in the arena"
+        ariaLabel="Open Arena Showdown on Roblox"
+        href={robloxLink}
+        cta="Play it on Roblox"
+      />
+
       <FeatureSection
         id="coffee-design"
         tone="orange"
@@ -437,30 +460,7 @@ function FeaturedWork() {
         href={figmaSecondLink}
         cta="Open the Figma prototype"
       />
-
-      <FeatureSection
-        id="roblox-game"
-        tone="mint"
-        badge="🚧 Under development"
-        badgeClass="badge-build"
-        title="Your little virtual arena, just for fun."
-        text="Arena Showdown is a laid-back virtual arena made purely for fun. Wander around, jump on the trampoline, and enjoy yourself. No pressure, no rules, just good vibes."
-        tags={["Roblox Studio", "Game Design", "Virtual Worlds"]}
-        note={
-          <>
-            Still under development, so think of it as a walk around the
-            workshop. Got feedback? Please <EmailLink>email me</EmailLink>, I'd
-            love to hear it!
-          </>
-        }
-        image="/roblox_2.png"
-        alt="Preview of my Arena Showdown Roblox game"
-        caption="Come hang out in the arena"
-        ariaLabel="Open Arena Showdown on Roblox"
-        href={robloxLink}
-        cta="Play it on Roblox"
-      />
-
+      
       {/*<FeatureSection
         id="roblox-practice"
         tone="yellow"
