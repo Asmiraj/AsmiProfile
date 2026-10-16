@@ -461,7 +461,7 @@ function FeaturedWork() {
         cta="Play it on Roblox"
       />
 
-      <FeatureSection
+      {/*<FeatureSection
         id="roblox-practice"
         tone="yellow"
         flip
@@ -477,7 +477,7 @@ function FeaturedWork() {
         ariaLabel="Open the Arena Showdown practice version on Roblox"
         href={robloxPracticeLink}
         cta="Practice on Roblox"
-      />
+      />*/}
     </section>
   );
 }
