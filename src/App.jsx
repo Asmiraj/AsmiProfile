@@ -393,15 +393,14 @@ function FeaturedWork() {
     >
       <div className="featured-intro">
         <h2>
-          Two worlds: quiet interfaces and noisy arenas.
+          Roblox?
           <span className="beginner-note">
             {" "}
             (Still finding my feet here — be kind, I'm learning as I go 😅)
           </span>
         </h2>
         <p>
-          A couple of UI designs I prototyped in Figma, and a Roblox game with a
-          practice mode to match. Here's a closer look.
+          Just me turning random ideas into playable worlds. Come see what I've been cooking up.
         </p>
       </div>
 
@@ -428,7 +427,7 @@ function FeaturedWork() {
         cta="Play it on Roblox"
       />
 
-      <FeatureSection
+      {/*<FeatureSection
         id="coffee-design"
         tone="orange"
         badge="UI design only, not a live site"
@@ -461,7 +460,7 @@ function FeaturedWork() {
         cta="Open the Figma prototype"
       />
       
-      {/*<FeatureSection
+      <FeatureSection
         id="roblox-practice"
         tone="yellow"
         flip
