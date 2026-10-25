@@ -1,4 +1,3 @@
-
 import "./App.css";
 
 const email = "asmirajj01@gmail.com";
@@ -17,6 +16,10 @@ const robloxLink =
 
 const robloxPracticeLink =
   "https://www.roblox.com/games/94192978841437/";
+
+// NEW: the haunted mansion game
+const robloxMansionLink =
+  "https://www.roblox.com/games/72844437930073/";
 
 const tokenWiseLink =
   "https://tokenwise-don-t-burn-your-tokens.ai.studio/";
@@ -324,6 +327,7 @@ function FeatureSection({
   ariaLabel,
   href,
   cta,
+  buttonClass = "button-ink",
 }) {
   const imageBlock = (
     <a
@@ -355,7 +359,7 @@ function FeatureSection({
       {note && <p className="work-in-progress">{note}</p>}
 
       <a
-        className="button button-ink"
+        className={`button ${buttonClass}`}
         href={href}
         target="_blank"
         rel="noreferrer"
@@ -404,7 +408,35 @@ function FeaturedWork() {
         </p>
       </div>
 
-        <FeatureSection
+      {/* NEW: haunted mansion game */}
+      <FeatureSection
+        id="roblox-mansion"
+        tone="ink"
+        flip
+        badge="🚧 Bigger version coming soon"
+        badgeClass="badge-spooky"
+        title="One of you isn't a guest."
+        text="You and your friends are trapped in a creepy old mansion, but one of you is secretly the Resident, disguised as a piece of furniture. Look closely: that sofa might be watching you. 2–8 players. Trust no one. Trust no sofa."
+        tags={["Roblox Studio", "Multiplayer", "Social Deduction", "Horror"]}
+        note={
+          <>
+            <strong>Guests:</strong> finish tasks, hide in wardrobes, and inspect
+            suspicious furniture to expose the Resident.{" "}
+            <strong>Resident:</strong> blend in as a sofa, a chair, or a clock,
+            haunt the house, and catch every guest before time runs out. A
+            bigger version is on its way, so enjoy this one until then!
+          </>
+        }
+        image="/dont_trust_the_sofa.png"
+        alt="Preview of my haunted mansion Roblox game"
+        caption="Is that sofa watching you?"
+        ariaLabel="Open the haunted mansion game on Roblox"
+        href={robloxMansionLink}
+        cta="Play it on Roblox"
+        buttonClass="button-yellow"
+      />
+
+      <FeatureSection
         id="roblox-game"
         tone="mint"
         badge="🚧 Under development"

@@ -698,6 +698,37 @@ a:focus-visible {
 .feature-mint { background: var(--mint); }
 .feature-yellow { background: var(--yellow); }
 
+/* Haunted mansion game (dark theme) */
+
+.feature-ink {
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 6px 6px 0 var(--pink);
+}
+
+.feature-ink .feature-copy > p:not(.work-in-progress) {
+  color: #e3e3ff;
+}
+
+.feature-ink .work-in-progress {
+  color: var(--ink);
+}
+
+.feature-ink .button-yellow {
+  color: var(--ink);
+  border-color: #fff;
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+.feature-ink .button-yellow:hover {
+  box-shadow: 2px 2px 0 var(--pink);
+}
+
+.feature-ink .feature-image-wrap {
+  border-color: #fff;
+  box-shadow: 4px 4px 0 var(--blue);
+}
+
 .feature-copy {
   display: flex;
   flex-direction: column;
@@ -722,6 +753,7 @@ a:focus-visible {
   border: 2px solid var(--ink);
   border-radius: 999px;
   background: var(--white);
+  color: var(--ink);
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -742,6 +774,15 @@ a:focus-visible {
 .badge-practice {
   background: var(--mint);
   transform: rotate(-2deg);
+}
+
+.badge-spooky {
+  background: var(--pink);
+  transform: rotate(-2deg);
+}
+
+.feature-copy .tag {
+  color: var(--ink);
 }
 
 .work-in-progress {
@@ -795,12 +836,17 @@ a:focus-visible {
   border: var(--border);
   border-radius: 999px;
   background: var(--yellow);
+  color: var(--ink);
   font-size: 0.82rem;
   font-weight: 700;
 }
 
 .feature-yellow .image-caption {
   background: var(--mint);
+}
+
+.feature-ink .image-caption {
+  background: var(--pink);
 }
 
 /* Experience */
